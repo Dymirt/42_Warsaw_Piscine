@@ -12,11 +12,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Greetings
-      run: echo "Hello Worl! This is C CI"
-      shell: bash
     - name: Norminette
       run: python3 -m pip install norminette
+      shell: bash
+    - name: Run norminete
+      run: norminette
       shell: bash
       
       
