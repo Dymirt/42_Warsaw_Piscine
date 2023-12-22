@@ -15,4 +15,8 @@ jobs:
     - name: Greetings
       run: echo "Hello Worl! This is C CI"
       shell: bash
+    - name: Norminette
+      run: python3 -m pip install norminette
+      shell: bash
+      
       
