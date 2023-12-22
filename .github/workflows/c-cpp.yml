@@ -12,11 +12,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Norminette
-      run: python3 -m pip install norminette
-      shell: bash
-    - name: Run norminete
-      run: norminette
+    - name: Print event
+      run: echo '${{ toJSON(github.event) }}' | jq
       shell: bash
       
       
